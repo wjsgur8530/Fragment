@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="[ 좋은 사료와 물 ]"
+                android:textSize="20dp"
+                android:textColor="@color/colorBlack"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+
+            </TextView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_circle_line"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="vertical">//여기부터
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/nb4"
+                        android:layout_width="40dp"
+                        android:layout_height="50dp"
+                        android:text="  4"
+                        android:textSize="17dp"
+                        android:textStyle="bold"
+                        android:paddingBottom="10dp"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/survey_number"
+                        />
+                    <TextView
+                        android:id="@+id/q4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:text="음수 대기 우의 여부와 음수 시간은 어떠합니까?"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginRight="10dp"
+                        android:paddingTop="0dp"
+                        android:textColor="@color/colorBlack"
+                        android:gravity="top"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:orientation="vertical">
+                    <RadioGroup
+                        android:id="@+id/water_Tank_Time_rdogrp4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:paddingLeft="20dp">
+                        <RadioButton
+                            android:id="@+id/water_Tank_Time_a4_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="대기 우 없고, 음수시간 5분 이하"
+                            android:textSize="15dp"
+                            android:layout_weight="1">
+                        </RadioButton>
+                        <RadioButton
+                            android:id="@+id/water_Tank_Time_a4_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="15dp"
+                            android:text="대기우 20% 이하, 음수 시간 10분 이하"
+                            android:layout_weight="1">
+                        </RadioButton>
+                        <RadioButton
+                            android:id="@+id/water_Tank_Time_a4_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="대기우 20% 이상, 음수 시간 10분 이상"
+                            android:textSize="15dp"
+                            android:layout_weight="1">
+                        </RadioButton>
+                    </RadioGroup>
+
+                </LinearLayout>
+
+            </LinearLayout>//여기까지 하나
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <Button
+                android:id="@+id/btn_move"
+                android:layout_width="338dp"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content"
+                android:text="다음"
+                android:textSize="36sp"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/button_square">
+            </Button>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
